@@ -102,7 +102,107 @@ namespace ExerciciosTI20N
             }
         }//fim do metodo
          
-       
+        //Exercicio 6: Faça um programa que peça ao usuario um número e imprima se é positivo, negativo ou zero. 
+        public string ExercicioSeis(int num)
+        {
+            if(num < 0)
+            {
+                return num + " é Negativo";
 
+            }
+            else if (num > 0)
+            {
+                
+                return num + " é Positivo";
+
+            }
+            else 
+            {
+                return num + " é zero";
+            }
+            
+        }//fim do metodo 
+       
+        //Exercicio 7: Faça um programa que peça ao usuario um número e imprima a tabuada desse número
+        public string ExercicioSete(int num)
+        {
+
+            string resultado = "";
+
+            resultado += "\nTabuada de " + num;
+            for (int i = 0; i <= 10; i++)
+            {
+                resultado += "\n" + num + " * " + i + " = " + (num * i);
+
+            }//fim do for
+
+            return resultado;   
+        }//fim do metodo
+
+        //Exercicio 8: Faça um programa que peça ao usúario um número e imprima os números de 1 até esse número.
+        public string ExercicioOito(int num)
+        {
+
+            string resultado = "";
+
+            for (int i = 0; i < num; i++)
+            {
+
+                resultado += "\n" + (i + 1);
+
+            }
+
+            return resultado;
+        }//fim do metodo
+
+        //Exercicio 9: Faça um programa que peça ao usúario um número e imprima a soma dos números de 1 até esse número.
+        public int ExercicioNove(int num )
+        {
+
+            int soma = 0; 
+
+            for(int i = 0; i <= num; i++)
+            {
+                soma += i;
+
+            }//fim do for 
+            return soma;
+        }//fim do metodo 
+
+        //Exercicio 10: Faça um programa que imprima os números primos de 1 a 20. 
+        public string ExercicioDez(int num)
+        {
+
+            string resultado = "";
+            for(int i = 0; i <= 20; i++)
+            {
+
+               if(resultado = 2);
+                {
+                    
+                    resultado +=
+                }//fim do if 
+            }//fim do for
+            return resultado; 
+        }//fim do metodo 
+
+        //Exercicio 11: Faça um programa que peça ao usuario um número e verifique se é primo. 
+        public int ExercicioOnze(int num)
+        {
+
+            for(int i = 1; i <= num; i++)
+            {
+                if (num % i == 0);
+                {
+                  
+                }//fim 
+                    
+
+                
+
+            }//fim do for 
+
+            
+        }
     }//fim da classe
 }//fim do projeto 
