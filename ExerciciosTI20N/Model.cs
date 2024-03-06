@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Runtime.Serialization.Formatters;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
@@ -170,39 +172,57 @@ namespace ExerciciosTI20N
         }//fim do metodo 
 
         //Exercicio 10: Faça um programa que imprima os números primos de 1 a 20. 
-        public string ExercicioDez(int num)
+        public string ExercicioDez()
         {
 
-            string resultado = "";
+            string primos = "2 3 5";
             for(int i = 0; i <= 20; i++)
             {
 
-               if(resultado = 2);
+               if( i % 2 != 0 && i % 3 != 0 && i % 5 != 0 )
                 {
-                    
-                    resultado +=
+
+                    primos += " " + i; 
                 }//fim do if 
             }//fim do for
-            return resultado; 
+            return primos; 
         }//fim do metodo 
 
         //Exercicio 11: Faça um programa que peça ao usuario um número e verifique se é primo. 
-        public int ExercicioOnze(int num)
+        public string ExercicioOnze(int num)
         {
 
-            for(int i = 1; i <= num; i++)
+           if (num % 2 != 0 && num % 3 != 0 && num % 5 != 0)
             {
-                if (num % i == 0);
-                {
-                  
-                }//fim 
-                    
 
-                
+                return "Primo!";
+            }else if (num == 2 || num == 3 || num == 5)
+            {
+                return "Primo!";
+            }
+            else
+            {
+                return "Não primo!"; 
+            }
 
-            }//fim do for 
+        }//fim do metodo 
+    
+    
 
-            
-        }
+        //Exercicio 12: Faça um programa que calcule o fatoral de um número. 
+        public int ExercicioDoze(int num)
+        {
+            int resultado = 1; 
+            while(num !=0)
+            {
+                resultado = (resultado * num); 
+                num = num - 1;
+            }//fim do while 
+            return resultado;
+        }//fim do metodo 
+
+        //Exercicio 13: Faça um programa que imprima a sequência de Fibonacci até o decimo termo. 
+        public 
+
     }//fim da classe
 }//fim do projeto 

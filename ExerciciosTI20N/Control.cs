@@ -25,13 +25,14 @@ namespace ExerciciosTI20N
                               "2. Exercício 02\n" +
                               "3. Exercício 03\n" +
                               "4. Exercício 04\n" +
-                              "5. Exercício 05\n" + 
+                              "5. Exercício 05\n" +
                               "6. Exercício 06\n" +
                               "7. Exercício 07\n" +
                               "8. Exercício 08\n" +
                               "9. Exercício 09\n" +
                               "10.Exercício 10\n" +
-                              "11.Exercício 11");
+                              "11.Exercício 11\n" +
+                              "12.Exercício 12\n"); 
 
 
         }//fim do Menu 
@@ -106,14 +107,21 @@ namespace ExerciciosTI20N
                         break;
 
                     case 10:
-                        Console.WriteLine("A soma dos números primos entre 1 e 20 é: " + modelo.ExercicioDez(num));
+                        Console.WriteLine("A soma dos números primos entre 1 e 20 é: " + modelo.ExercicioDez());
                         break;
 
                     case 11:
                         Console.WriteLine("Informe um número: ");
                         num = Convert.ToInt32(Console.ReadLine());
 
-                        Console.WriteLine(modelo.ExercicioDez(num));
+                        Console.WriteLine(modelo.ExercicioOnze(num));
+                        break;
+
+                    case 12: 
+                        Console.WriteLine("Informe um número: ");
+                        num = Convert.ToInt32(Console.ReadLine()); 
+
+                        Console.Write(modelo.ExercicioDoze(num));
                         break;
 
                     default:
